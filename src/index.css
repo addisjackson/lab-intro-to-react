@@ -11,8 +11,7 @@ body,
 }
 
 .navbar {
-  position: fixed;
-  margin-bottom: 1rem;
+  position: flex;
   height: 3%;
   width: 95rem;
   display: flex;
@@ -27,6 +26,7 @@ body,
   font-size: 0.75rem;
   margin-right: 1rem;
   display: inline-block;
+  background-color: white;
 }
 
 .user-profile {
@@ -44,16 +44,21 @@ body,
   grid-template-rows: 1fr 1fr 1fr 1fr;
   grid-gap: 2rem;
   grid-row-gap: 2rem;
-  padding-top: 5rem;
+  padding-top: 0rem;
 }
 
 .contacts {
   grid-row: 1 / span 4; /* Span 4 rows starting from row 1 */
   grid-column: 4/ span 1;
-  border: 1px solid #000605;
+  border-top: 1px solid #000605;
+  border-left: 1px solid #000605;
+  border-right: 1px solid #000605;
+  margin-bottom: 1.3rem;
+  border-bottom: 1px solid #000605;
 }
 .contact-user-card {
   border: 1px solid #000605;
+  margin: 1rem;
 }
 
 .posts {
@@ -69,11 +74,9 @@ body,
 .post {
   margin : 2rem;
   border: 1px solid #000605;
+  padding-bottom: 1rem;
 }
 
-.contact-user-card {
-  border: 1px solid #000605;
-}
 .contact-user-card img, .contact-user-info {
   display: inline-block;
   padding-right: 1rem;
@@ -89,4 +92,25 @@ body,
 
 .contact-user-message {
   font-size: 0.75rem;
+}
+
+.App {
+  height: 100%;
+  width: 100%;
+  display: inline;
+}
+
+.user-profile .contact-user-card {
+  margin: 0rem;
+  padding-bottom: 3rem;
+}
+
+.userprofile .contacts {
+  display: inline-block;
+
+}
+
+.userprofile {
+  grid-row: 1 / span 4; /* Span 1 row starting from row 1 */
+  grid-column: 1 / span 3;
 }

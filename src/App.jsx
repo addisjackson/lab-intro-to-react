@@ -12,7 +12,7 @@ function App() {
       <NavBar />
     </div>
     <main className="container">
-    <div className="user-profile">
+    <div className="userprofile">
       <UserProfile />
       <Posts />
     </div>
